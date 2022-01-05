@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome caisse System</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="emballage">
+      <header class="head">
+        <h1 id="ko">Application caisse</h1>
+      </header>
+
+      <main class="head">
+        <table>
+          <thead>
+            <th id="classTab">Type</th>
+            <th id="codeTab">Montant</th>
+            <th id="labelTab">Motif</th>
+          </thead>
+          <tbody id="myAccount-list"></tbody>
+        </table>
+      </main>
+ </div>
+      <footer class="footerPage">
+        <form method="post" action="" class="form">
+          <fieldset>
+            <legend id="titleAccount">Transaction</legend>
+
+            <label for="classe">Type</label>
+            <select name="" id="classe" required="true">
+              <option value="" required readonly="true">
+                Type de Transaction
+              </option>
+              <option required readonly="true">Crédit</option>
+              <option required readonly="true">Débit</option>
+            </select>
+
+            <label for="code">Montant</label>
+            <input
+              type="number"
+              name="code"
+              id="code"
+              autocomplete="off"
+              placeholder="montant"
+              required
+            />
+
+            <label for="label">Motif</label>
+            <input
+              type="text"
+              name="label"
+              id="label"
+              placeholder="motif de la Transaction"
+              autocomplete="off"
+              required
+            />
+
+            <input type="button" value="Valider" onclick="addTask()" />
+          </fieldset>
+        </form>
+      </footer>
+   
+
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
